@@ -142,7 +142,7 @@ class AdldapServiceProvider extends ServiceProvider
      *
      * @return Provider
      */
-    protected function newProvider($configuration = [], ConnectionInterface $connection = null)
+    protected function newProvider($configuration = [], ?ConnectionInterface $connection = null)
     {
         return new Provider($configuration, $connection);
     }

@@ -27,7 +27,7 @@ class AuthenticatedWithWindows
      * @param User            $user
      * @param Authenticatable $model
      */
-    public function __construct(User $user, Authenticatable $model = null)
+    public function __construct(User $user, ?Authenticatable $model = null)
     {
         $this->user = $user;
         $this->model = $model;

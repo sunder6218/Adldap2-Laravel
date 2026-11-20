@@ -17,7 +17,7 @@ trait ValidatesUsers
      *
      * @return bool
      */
-    protected function passesValidation(User $user, Model $model = null)
+    protected function passesValidation(User $user, ?Model $model = null)
     {
         return (new Validator(
             $this->rules($user, $model)
@@ -32,7 +32,7 @@ trait ValidatesUsers
      *
      * @return array
      */
-    protected function rules(User $user, Model $model = null)
+    protected function rules(User $user, ?Model $model = null)
     {
         $rules = [];
 
