@@ -27,7 +27,7 @@ abstract class Rule
      * @param User       $user
      * @param Model|null $model
      */
-    public function __construct(User $user, Model $model = null)
+    public function __construct(User $user, ?Model $model = null)
     {
         $this->user = $user;
         $this->model = $model;
